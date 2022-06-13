@@ -30,9 +30,10 @@
 [
 
 {%- include_relative {{ apps.first }} -%}
+{%- include_relative {{ apps.first.id }} -%}
 
 {%- for app in apps offset:1 -%}
-,{%- include_relative {{ app.id }} -%}
+,{%- include_relative {{ app }} -%}
 {%- endfor -%}
 
 ]
