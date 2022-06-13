@@ -1,7 +1,7 @@
 /* This rewrites boot0.js based on current settings. If settings changed then it
 recalculates, but this avoids us doing a whole bunch of reconfiguration most
 of the time. */
-E.showMessage("Updating boot0...");
+E.showMessage(/*LANG*/"Updating boot0...");
 var s = require('Storage').readJSON('setting.json',1)||{};
 var BANGLEJS2 = process.env.HWVERSION==2; // Is Bangle.js 2
 var boot = "", bootPost = "";
@@ -197,8 +197,18 @@ bootFiles.forEach(bootFile=>{
   require('Storage').write('.boot0',"//"+bootFile+"\n",fileOffset);
   fileOffset+=2+bootFile.length+1;
   var bf = require('Storage').read(bootFile);
-  require('Storage').write('.boot0',bf,fileOffset);
-  fileOffset+=bf.length;
+  // we can't just write 'bf' in one go because at least in 2v13 and earlier
+  // Espruino wants to read the whole file into RAM first, and on Bangle.js 1
+  // it can be too big (especially BTHRM).
+  var bflen = bf.length;
+  var bfoffset = 0;
+  while (bflen) {
+    var bfchunk = Math.min(bflen, 2048);
+    require('Storage').write('.boot0',bf.substr(bfoffset, bfchunk),fileOffset);
+    fileOffset+=bfchunk;
+    bfoffset+=bfchunk;
+    bflen-=bfchunk;
+  }
   require('Storage').write('.boot0',";\n",fileOffset);
   fileOffset+=2;
 });
@@ -209,7 +219,7 @@ delete bootPost;
 delete bootFiles;
 delete fileSize;
 delete fileOffset;
-E.showMessage("Reloading...");
+E.showMessage(/*LANG*/"Reloading...");
 eval(require('Storage').read('.boot0'));
 // .bootcde should be run automatically after if required, since
 // we normally get called automatically from '.boot0'
