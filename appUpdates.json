@@ -32,7 +32,7 @@
 {%- include_relative {{ apps.first }} -%}
 
 {%- for app in apps offset:1 -%}
-,{%- include_relative {{ app }} -%}
+,{%- include_relative {{ app.id }} -%}
 {%- endfor -%}
 
 ]
