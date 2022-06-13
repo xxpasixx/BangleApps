@@ -30,9 +30,9 @@ require 'json'
     {%- assign apps = temp | strip | split: " " -%}
 {%- endif -%}
 
-{%- include_relative {{ apps.first[0] }} -%}
-[
 
+[
+    {"t" : "b"},
 {%- include_relative {{ apps.first }} -%}
 {%- apps.first[0] -%}
 
