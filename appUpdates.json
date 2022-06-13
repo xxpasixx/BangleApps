@@ -31,7 +31,7 @@
 
 [
     
-{%- include_relative {{"t" : "b"}} -%}
+{%- apps.first -%}
 
 
 {%- include_relative {{ apps.first }} -%}
