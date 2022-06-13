@@ -30,12 +30,12 @@ require 'json'
     {%- assign apps = temp | strip | split: " " -%}
 {%- endif -%}
 
+{%- apps.first[0] -%}
 [
 
 {%- include_relative {{ apps.first }} -%}
-{% JSON.parse({{ apps.first }}) %}
+{%- apps.first[0] -%}
 
-{{ foo.id }}
 
 {%- for app in apps offset:1 -%}
 ,{%- include_relative {{ app }} -%}
