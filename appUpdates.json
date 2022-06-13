@@ -18,6 +18,9 @@
 
 # restricted: ["boot", "launch", "antonclk", "health", "setting", "about", "widbat", "widbt", "widlock", "widid"]
 ---
+
+require 'json'
+
 {%- if page.restricted == nil -%}
     {%- assign apps = site.static_files | where: "name", "metadata.json" | map: "path" -%}
 {%- else -%}
@@ -30,7 +33,6 @@
 [
 
 {%- include_relative {{ apps.first }} -%}
-{%- include_relative {{ apps.first.id }} -%}
 
 {%- for app in apps offset:1 -%}
 ,{%- include_relative {{ app }} -%}
