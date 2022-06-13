@@ -33,7 +33,9 @@ require 'json'
 [
 
 {%- include_relative {{ apps.first }} -%}
-{% jsonball foo from var apps.first %}
+{% JSON.parse({{ apps.first }}) %}
+
+{{ foo.id }}
 
 {%- for app in apps offset:1 -%}
 ,{%- include_relative {{ app }} -%}
