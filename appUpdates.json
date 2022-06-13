@@ -28,10 +28,9 @@
     {%- assign apps = temp | strip | split: " " -%}
 {%- endif -%}
 
+{{ apps }}
 
 [
-    
-{%- {{ apps.first }} -%}
 
 
 {%- include_relative {{ apps.first }} -%}
