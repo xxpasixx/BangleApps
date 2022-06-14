@@ -30,7 +30,7 @@
 
 
 {% if apps.first %}
-  Hello {{ JSON.parse( include_relative {{ apps.first }}) }}!
+  Hello {{ JSON.parse( include_relative {{ apps.first }}.id }}!
 {% endif %}
 
 
