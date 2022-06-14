@@ -28,7 +28,7 @@
     {%- assign apps = temp | strip | split: " " -%}
 {%- endif -%}
 
-{{ apps }}
+
 
 [
 
