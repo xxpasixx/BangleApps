@@ -30,7 +30,7 @@
 
 
 
-{%- assign testt = include_relative {{ apps.first }} -%}
+{%- assign testt =  {{ apps.first }} -%}
 
 {% if testt %}
   Hello {{ testt }}!
