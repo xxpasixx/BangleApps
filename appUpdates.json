@@ -34,7 +34,6 @@
 
 
 {%- include_relative {{ apps.first }} -%}
-{%- apps.first[0] -%}
 
 
 {%- for app in apps offset:1 -%}
