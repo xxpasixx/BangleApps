@@ -29,8 +29,11 @@
 {%- endif -%}
 
 
-{% if apps.first %}
-  Hello {{ JSON.parse( include_relative {{ apps.first }}.id }}!
+
+{%- include_relative {{ apps.first }} data=testt -%}
+
+{% if testt %}
+  Hello {{ testt }}!
 {% endif %}
 
 
