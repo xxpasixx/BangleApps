@@ -29,6 +29,10 @@
 {%- endif -%}
 
 
+{% if apps.first %}
+  Hello {{ apps.first }}!
+{% endif %}
+
 
 [
 
