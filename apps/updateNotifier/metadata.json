@@ -7,7 +7,8 @@
     "tags": "tool,messages,notifications,gadgetbridge",
     "supports" : ["BANGLEJS2"], 
     "dependencies": {
-        "scheduler":"type"
+        "scheduler":"type",
+        "android": "app"
     }, 
     "readme": "README.md",
     "storage": [
