@@ -118,4 +118,5 @@
       downloadApp(apps[appCount - 1].id);
     }
   };
+
 })
