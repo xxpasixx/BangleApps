@@ -1,7 +1,5 @@
 Bangle.loadWidgets();
 Bangle.drawWidgets();
-Bluetooth.println(JSON.stringify({ t: "info", msg: "Hello World" }));
-
 
 var settings = Object.assign({
     showInMessagesApp: false,

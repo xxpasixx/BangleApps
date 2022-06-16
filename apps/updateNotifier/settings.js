@@ -19,12 +19,6 @@
   E.showMenu({
     "": { "title": "Update Notifier" },
     "< Back": () => back(),
-    "Manual Check": function () {
-      if (!settings.showDebug)
-        E.showMessage("check updates started");
-        ()=>load("updateNotifier.app.js");
-      // startDownload();
-    },
     'Show in Messages': {
       value: !!settings.showInMessagesApp,
       format: v => v ? "On" : "Off",
