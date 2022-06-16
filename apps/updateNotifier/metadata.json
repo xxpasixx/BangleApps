@@ -5,7 +5,7 @@
     "description": "Automatecely checks for App updates an notefies you.\n!Important: it requires the new Bangle.js Gadgetbridge App and internet acces enabled!",
     "icon": "app.png",
     "tags": "tool,messages,notifications,gadgetbridge",
-    "supports" : ["BANGLEJS2"], 
+    "supports" : ["BANGLEJS2"],
     "dependencies": {
         "scheduler":"type",
         "android": "app"
@@ -13,6 +13,7 @@
     "readme": "README.md",
     "storage": [
         {"name":"updateNotifier.settings.js","url":"settings.js"},
+        {"name":"runUpdateCheck.app.js","url":"runUpdateCheck.js"},
         {"name":"updateNotifier.app.js","url":"app.js"},
         {"name":"updateNotifier.img","url":"app-icon.js","evaluate":true}
     ]
