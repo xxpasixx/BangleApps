@@ -21,12 +21,16 @@
 
 {%- if page.restricted == nil -%}
     {%- assign apps = site.static_files | where: "name", "metadata.json" | map: "path" -%}
-
+{%- else -%}
+    {%- capture temp -%}
+    {%- for app in page.restricted %} /apps/{{app}}/metadata.json {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign apps = temp | strip | split: " " -%}
 {%- endif -%}
 
 
 
-{%- assign testt =  include_relative apps.first -%}
+{%- assign testt =  include_relative {{ apps.first }} -%}
 {%- assign test2 =  [{"id":"1","name":"TEST_1"},{"id":"2","name":"TEST_2"},{"id":"3","name":"TEST_3"},{"id":"4","name":"TEST_4"},{"id":"5","name":"TEST_5"}] -%}
 
 {% if testt %}
