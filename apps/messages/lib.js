@@ -138,6 +138,7 @@ exports.getMessageImage = function(msg) {
   if (s=="to do") return atob("GBgBAAAAAAAAAAAwAAB4AAD8AAH+AAP/DAf/Hg//Px/+f7/8///4///wf//gP//AH/+AD/8AB/4AA/wAAfgAAPAAAGAAAAAAAAAA");
   if (s=="twitch") return atob("GBgBH//+P//+P//+eAAGeAAGeAAGeDGGeDOGeDOGeDOGeDOGeDOGeDOGeAAOeAAOeAAcf4/4f5/wf7/gf//Af/+AA/AAA+AAAcAA");
   if (s=="twitter") return atob("GhYBAABgAAB+JgA/8cAf/ngH/5+B/8P8f+D///h///4f//+D///g///wD//8B//+AP//gD//wAP/8AB/+AB/+AH//AAf/AAAYAAA");
+  if (s=="updateNotifier") return atob("MDCBAf4B//////gAf////+DYP////8Hcn////8nOT////4AAD////7PfZ////zPfd////zffM////3ffM////wAAA////yfPAAH//3ffAAB//zffAAAf/zPeAfwH/4AAB/8D/4AAH//B/8nAP//g/+DAf//wf/BA///4f/wB///8P/8D///8H//H///gAf+H///AAf+H///AAf+P///gg/+P///ww/+P///wB/+P///4D/+P///8D/+P///8H/+P///+P/+H//////+H///////H///////D///////B///////g///////wf//z///wP//h///4H/+D///8B/4D////A/gP////gAAf////4AB//////AH//////////////////w==");
   if (s=="whatsapp") return atob("GBiBAAB+AAP/wAf/4A//8B//+D///H9//n5//nw//vw///x///5///4///8e//+EP3/APn/wPn/+/j///H//+H//8H//4H//wMB+AA==");
   if (s=="wordfeud") return atob("GBgCWqqqqqqlf//////9v//////+v/////++v/////++v8///Lu+v8///L++v8///P/+v8v//P/+v9v//P/+v+fx/P/+v+Pk+P/+v/PN+f/+v/POuv/+v/Ofdv/+v/NvM//+v/I/Y//+v/k/k//+v/i/w//+v/7/6//+v//////+v//////+f//////9Wqqqqqql");
   if (s=="youtube") return atob("GBgBAAAAAAAAAAAAAAAAAf8AH//4P//4P//8P//8P5/8P4/8f4P8f4P8P4/8P5/8P//8P//8P//4H//4Af8AAAAAAAAAAAAAAAAA");

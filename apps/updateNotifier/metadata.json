@@ -1,0 +1,19 @@
+{ "id": "updateNotifier",
+    "name": "Update Notefier",
+    "shortName":"Update Noti",
+    "version":"0.01",
+    "description": "Automatecely checks for App updates an notefies you.\n!Important: it requires the new Bangle.js Gadgetbridge App and internet acces enabled!",
+    "icon": "app.png",
+    "tags": "tool,messages,notifications,gadgetbridge",
+    "supports" : ["BANGLEJS2"], 
+    "dependencies": {
+        "scheduler":"type",
+        "android": "type"
+    }, 
+    "readme": "README.md",
+    "storage": [
+      {"name":"updateNotifier.app.js","url":"app.js"},
+      {"name":"updateNotifier.img","url":"app-icon.js","evaluate":true}
+    ]
+  }
+  
