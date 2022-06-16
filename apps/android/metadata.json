@@ -16,5 +16,6 @@
     {"name":"android.boot.js","url":"boot.js"}
   ],
   "data": [{"name":"android.settings.json"}, {"name":"android.calendar.json"}],
-  "sortorder": -8
+  "sortorder": -8,
+  "type": "app"
 }
