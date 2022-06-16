@@ -22,7 +22,7 @@
     "Manual Check": function () {
       if (!settings.showDebug)
         E.showMessage("check updates started");
-        ()=>load("runUpdateCheck.app.js");
+        ()=>load("updateNotifier.app.js");
       // startDownload();
     },
     'Show in Messages': {
