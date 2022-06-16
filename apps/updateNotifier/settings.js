@@ -22,7 +22,7 @@
     "Manual Check": function () {
       if (!settings.showDebug)
         E.showMessage("check updates started");
-      eval(require("Storage").read("runUpdateCheck.app.js"));
+        ()=>load("runUpdateCheck.app.js");
       // startDownload();
     },
     'Show in Messages': {
