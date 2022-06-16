@@ -12,7 +12,7 @@ var settings = Object.assign({
 }, require('Storage').readJSON("updateNotifier.settings.json", true) || {});
 
 //TODO: Remove
-settings.downloadURL = "https://xxpasixx.github.io/BangleApps/";
+settings.downloadURL = "https://espruino.github.io/BangleApps/";
 
 
 
