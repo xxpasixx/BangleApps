@@ -21,11 +21,7 @@
 
 {%- if page.restricted == nil -%}
     {%- assign apps = site.static_files | where: "name", "metadata.json" | map: "path" -%}
-{%- else -%}
-    {%- capture temp -%}
-    {%- for app in page.restricted %} /apps/{{app}}/metadata.json {%- endfor -%}
-    {%- endcapture -%}
-    {%- assign apps = temp | strip | split: " " -%}
+
 {%- endif -%}
 
 
