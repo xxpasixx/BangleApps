@@ -35,10 +35,10 @@
 
 
 {{ apps.length }}
-{{ include_relative {{ apps.first }} }}
-{% if testt %}
+{%- include_relative {{ apps.first }} -%}
+{%- if testt -%}
   Hello {{ testt }}!
-{% endif %}
+{%- endif -%}
 
 {% if test2 %}
   Hello {{ test2 | jsonify }}!
