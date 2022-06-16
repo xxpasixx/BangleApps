@@ -121,4 +121,4 @@ global.GB = (event) => {
 };
 
 //Menue
-eval(require("Storage").read("android.settings.js"))(()=>load());
+eval(require("Storage").read("updateNotifier.settings.js"))(()=>load());
