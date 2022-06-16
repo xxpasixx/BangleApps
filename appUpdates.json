@@ -46,10 +46,6 @@
 {% endif %}
 
 
-
-{%- include_relative {{ apps.first }} | number_of_words -%}
-
-
 [
 
 
