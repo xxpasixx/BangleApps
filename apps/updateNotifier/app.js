@@ -37,6 +37,7 @@ function startDownload() {
 
 
 function downloadApp(appID) {
+    E.showMessage("download");
     if (settings.showDebug)
         E.showMessage("check updates " + (appCount) + " left (" + appID + ')');
     appCount = appCount - 1;
@@ -48,6 +49,7 @@ function getApp(appID) {
 }
 
 function compareApp(newApp) {
+    E.showMessage("compate");
     if (newApp.version > getApp(newApp.id).version) {
         newApps.push({
             id: newApp.id,
@@ -59,6 +61,7 @@ function compareApp(newApp) {
 }
 
 function complete() {
+    E.showMessage("complete");
     if (settings.showDebug)
         E.showMessage("complete " + newApps.length);
     downloadRunning = false;
@@ -107,6 +110,7 @@ function saveNewApps() {
 // Widget
 
 global.GB = (event) => {
+    E.showMessage("new Event lol");
     if (event.t == "http" && downloadRunning) {
         if (appCount <= 0) {
             complete();
