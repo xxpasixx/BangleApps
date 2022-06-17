@@ -11,7 +11,7 @@ Make sure you are connected to the new Bangle.js Gadgetbridge and have Internet 
 Start the App and click on Manual check.
 (Later there will be an automatic check)
 
-## Features
+
 ## Future features
 
 I'm keen to complete this project with
@@ -23,6 +23,7 @@ I'm keen to complete this project with
 ## Requests
 
 For support and discussion please post in the [Bangle JS Forum](http://forum.espruino.com/microcosms/1424/)
+
 
 ## Creator
 
