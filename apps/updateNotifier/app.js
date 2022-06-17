@@ -42,6 +42,7 @@ function downloadApp(appID) {
         E.showMessage("check updates " + (appCount) + " left (" + appID + ')');
     appCount = appCount - 1;
     Bluetooth.println(JSON.stringify({ t: "http", url: settings.downloadURL + "apps/" + appID + "/metadata.json" }));
+    E.showMessage("request send");
 }
 
 function getApp(appID) {
