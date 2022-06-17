@@ -33,14 +33,14 @@
         writeSettings();
       }
     },
-    'Show Widget': {
-      value: !!settings.showWidget,
-      format: v => v ? "On" : "Off",
-      onchange: v => {
-        settings.showWidget = v;
-        writeSettings();
-      }
-    },
+    // 'Show Widget': {
+    //   value: !!settings.showWidget,
+    //   format: v => v ? "On" : "Off",
+    //   onchange: v => {
+    //     settings.showWidget = v;
+    //     writeSettings();
+    //   }
+    // },
     'Show Debug messages': {
       value: !!settings.showDebug,
       format: v => v ? "On" : "Off",
@@ -49,13 +49,13 @@
         writeSettings();
       }
     },
-    'Check on Boot': {
-      value: !!settings.checkOnBoot,
-      format: v => v ? "On" : "Off",
-      onchange: v => {
-        settings.checkOnBoot = v;
-        writeSettings();
-      }
-    },
+    // 'Check on Boot': {
+    //   value: !!settings.checkOnBoot,
+    //   format: v => v ? "On" : "Off",
+    //   onchange: v => {
+    //     settings.checkOnBoot = v;
+    //     writeSettings();
+    //   }
+    // },
   });
 })

@@ -93,16 +93,15 @@ function saveNewApps() {
     require('Storage').writeJSON("updateNotifier.settings.json", settings);
 }
 
-require("sched").setAlarm("downloadApps", {
-    appid: "updateNotifier",
-    on: false,
-    t: 20 * 53 * 30 * 1000,
-    dow: 0b1111111,
-    rp: true,
-    js: "load('setting.app.js')",
-});
+// require("sched").setAlarm("downloadApps", {
+//     appid: "updateNotifier",
+//     on: false,
+//     t: 20 * 53 * 30 * 1000,
+//     dow: 0b1111111,
+//     rp: true,
+//     js: "load('setting.app.js')",
+// });
 
-// Sheaduler einstellen
 
 
 // Widget
