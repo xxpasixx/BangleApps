@@ -103,6 +103,7 @@
   { "app":"vlc", "icon":"vlc.png" },
   { "app":"warnapp", "icon":"warnapp.png" },
   { "app":"whatsapp", "icon":"whatsapp.png" },
+  { "app":"Whatsapp Business", "icon":"whatsapp business.png" },
   { "app":"wordfeud", "icon":"wordfeud.png" },
   { "app":"youtube", "icon":"youtube.png" },
 	{ "app":"newpipe", "icon":"youtube.png" },

@@ -139,6 +139,7 @@ exports.getColor = function(msg,options) {
     "twitter": "#1d9bf0", // https://about.twitter.com/en/who-we-are/brand-toolkit
     "vlc": "#ff8800",
     "whatsapp": "#4fce5d",
+    "Whatsapp Business": "#4fce5d",
     "wordfeud": "#e7d3c7",
     "youtube": "#f00", // https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors
   }[s]||options.default;
